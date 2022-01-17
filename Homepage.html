@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project.css">
+    
+    <script src="Script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="inline">
+                DANIEL ANDERSON PHOTOGRAPHY
+            </h1>
+            <div><a href="Homepage.html"><button class="navbut"><span class="activelink">Homepage</span></button></a></div>
+            <div><a href="About Me.Html"><button class="navbut"><span class="activelink">About Me</span></button></a></div>
+            <div><a href="Portfolio.html"><button class="navbut"><span class="activelink">Portfolio</span></button></a></div>
+            <div><a href="Contact.html"><button class="navbut"><span class="activelink">Contact</span></button></a></div>
+        </nav>
+    </header>
+            
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="Img\animal-company-g7090af70c_1920@2x.png">
+    <img class="mySlides" src="Img\pexels-misha-voguel-7326780@2x.png">
+    <img class="mySlides" src="Img\pexels-thirdman-5052645.png">
+    <img class="mySlides" src="Img\Сгруппировать 7@2x.png">
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <div id="wrapper">
+    <main class="flexbox">
+        <div id="subcontainer">
+            <article id="article" class="flexbox">
+                <div id="story">
+                    <div class="subcontainer3">
+                        
+                    <img src="Img\pexels-thirdman-5052648@2x.png" class="inline-block right" width="30%" height="30%" class="block">
+                        <h2 id="story h2">Nice to meet you</h2>
+                        
+                        <p id="story p"> My name is Daniel Anderson and I am a photographer with 10+ years of experience in the industry. </p>
+                            <p id="story p">    I am specializing in different fields from landscape till portrait. </p>
+                                <p id="story p">   I finished New York Institute of Photography and worked for many famous companies like National Geographic and Vogue. </p>
+                                    <p id="story p">   Now I am a freelancer who is ready for <b>YOUR</b> challenges. </p>
+                        
+                
+                    </div>
+                   <div>
+                       <h2 id="story h2">What can I offer you?</h2>
+                   </div> 
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Contacts:</h3>
+        <ul>
+        <li>+44 112 358 132</li>
+        <li>danielandersonmanager@mail.com</li>
+        <li>Washington St. 5, New York, USA</li>
+        </ul>
+        <div class ="footer-content2">© Daniel Anderson</div>
+        
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
