@@ -59,8 +59,9 @@ nav
     color: white;
 }
 .h1_center{
-    text-align: center;
-    font: normal normal bold 40px/22px Montserrat;
+    text-align: center;   
+    font-size:xx-large;
+    font-weight: bold;
     padding: 30px;
 }
 .p_bold{
@@ -121,10 +122,12 @@ article {
 
 }
 .subcontainer3 {   
-    height: 20em;
+    
+    height: 25em;
     text-align: justify;
     padding: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding-left: 15px ;
 }
 .subcontainer5 {
@@ -221,8 +224,9 @@ article {
 }
 #story h2{
     display: flex;
-    padding: 15px;
-    font: normal normal bold 35px/22px Montserrat;
+    padding: 25px;
+    font-size:xx-large;
+    font-weight: bold;
     margin: 0;
 }
 .center{
