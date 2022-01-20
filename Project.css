@@ -345,6 +345,19 @@ body {
     margin-bottom: 0px;
     vertical-align: middle;
     width: 100%;
+    max-height: 50%;
+  }
+  .column2 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column2 img {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    width: 100%;
     height: 32%;
     max-height: 50%;
   }
